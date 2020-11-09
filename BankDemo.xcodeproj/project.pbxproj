@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB1456F2545688E00DFA96E /* BankDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1456E2545688E00DFA96E /* BankDemoApp.swift */; };
-		1BB145712545688E00DFA96E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB145702545688E00DFA96E /* ContentView.swift */; };
+		1B09FC69254C16F000F099D8 /* RssData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC68254C16F000F099D8 /* RssData.swift */; };
+		1B09FC70254C170300F099D8 /* RssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC6C254C170300F099D8 /* RssView.swift */; };
+		1B09FC71254C170300F099D8 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC6D254C170300F099D8 /* FirstPageView.swift */; };
+		1B09FC77254C171200F099D8 /* RssViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC76254C171200F099D8 /* RssViewModel.swift */; };
+		1B09FC7A254C172100F099D8 /* BankDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC79254C172100F099D8 /* BankDemoApp.swift */; };
+		1B09FC84254C5FC600F099D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC83254C5FC600F099D8 /* Constants.swift */; };
+		1B09FC90254EE21C00F099D8 /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC8F254EE21C00F099D8 /* DateTimeView.swift */; };
+		1B09FC9E2552D93A00F099D8 /* SecondPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09FC9D2552D93A00F099D8 /* SecondPageView.swift */; };
+		1B6E9D98255466B3000B6F6D /* DynamicLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E9D97255466B3000B6F6D /* DynamicLabelView.swift */; };
 		1BB145732545688F00DFA96E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB145722545688F00DFA96E /* Assets.xcassets */; };
 		1BB145762545688F00DFA96E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB145752545688F00DFA96E /* Preview Assets.xcassets */; };
+		1BE4ADC52548439A00030970 /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4ADC42548439A00030970 /* XmlParserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B09FC68254C16F000F099D8 /* RssData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssData.swift; sourceTree = "<group>"; };
+		1B09FC6C254C170300F099D8 /* RssView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssView.swift; sourceTree = "<group>"; };
+		1B09FC6D254C170300F099D8 /* FirstPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
+		1B09FC76254C171200F099D8 /* RssViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssViewModel.swift; sourceTree = "<group>"; };
+		1B09FC79254C172100F099D8 /* BankDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankDemoApp.swift; path = BankDemo/Other/BankDemoApp.swift; sourceTree = SOURCE_ROOT; };
+		1B09FC83254C5FC600F099D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B09FC8F254EE21C00F099D8 /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
+		1B09FC9D2552D93A00F099D8 /* SecondPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageView.swift; sourceTree = "<group>"; };
+		1B6E9D97255466B3000B6F6D /* DynamicLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicLabelView.swift; sourceTree = "<group>"; };
 		1BB1456B2545688E00DFA96E /* BankDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BB1456E2545688E00DFA96E /* BankDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDemoApp.swift; sourceTree = "<group>"; };
-		1BB145702545688E00DFA96E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BB145722545688F00DFA96E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BB145752545688F00DFA96E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BB145772545688F00DFA96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE4ADC42548439A00030970 /* XmlParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B09FC67254C16F000F099D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B09FC68254C16F000F099D8 /* RssData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B09FC6B254C170300F099D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B09FC6D254C170300F099D8 /* FirstPageView.swift */,
+				1B09FC9D2552D93A00F099D8 /* SecondPageView.swift */,
+				1B09FC6C254C170300F099D8 /* RssView.swift */,
+				1B09FC8F254EE21C00F099D8 /* DateTimeView.swift */,
+				1B6E9D97255466B3000B6F6D /* DynamicLabelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B09FC75254C171200F099D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B09FC76254C171200F099D8 /* RssViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B09FC82254C5F8A00F099D8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1B09FC79254C172100F099D8 /* BankDemoApp.swift */,
+				1BE4ADC42548439A00030970 /* XmlParserManager.swift */,
+				1B09FC83254C5FC600F099D8 /* Constants.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		1BB145622545688E00DFA96E = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +106,10 @@
 		1BB1456D2545688E00DFA96E /* BankDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1BB1456E2545688E00DFA96E /* BankDemoApp.swift */,
-				1BB145702545688E00DFA96E /* ContentView.swift */,
+				1B09FC82254C5F8A00F099D8 /* Other */,
+				1B09FC67254C16F000F099D8 /* Model */,
+				1B09FC75254C171200F099D8 /* ViewModel */,
+				1B09FC6B254C170300F099D8 /* View */,
 				1BB145722545688F00DFA96E /* Assets.xcassets */,
 				1BB145772545688F00DFA96E /* Info.plist */,
 				1BB145742545688F00DFA96E /* Preview Content */,
@@ -138,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB145712545688E00DFA96E /* ContentView.swift in Sources */,
-				1BB1456F2545688E00DFA96E /* BankDemoApp.swift in Sources */,
+				1B09FC69254C16F000F099D8 /* RssData.swift in Sources */,
+				1B09FC70254C170300F099D8 /* RssView.swift in Sources */,
+				1B09FC71254C170300F099D8 /* FirstPageView.swift in Sources */,
+				1B6E9D98255466B3000B6F6D /* DynamicLabelView.swift in Sources */,
+				1B09FC9E2552D93A00F099D8 /* SecondPageView.swift in Sources */,
+				1B09FC84254C5FC600F099D8 /* Constants.swift in Sources */,
+				1BE4ADC52548439A00030970 /* XmlParserManager.swift in Sources */,
+				1B09FC7A254C172100F099D8 /* BankDemoApp.swift in Sources */,
+				1B09FC77254C171200F099D8 /* RssViewModel.swift in Sources */,
+				1B09FC90254EE21C00F099D8 /* DateTimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +336,7 @@
 				DEVELOPMENT_TEAM = 9U94JKG3F5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BankDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +358,7 @@
 				DEVELOPMENT_TEAM = 9U94JKG3F5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BankDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
