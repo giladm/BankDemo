@@ -50,7 +50,7 @@ class RssViewModel: ObservableObject {
                     if self.lastUpdated[t] == lastBuildDate {
                         continue // to next tab
                     } else { // rss feed was updated.
-                        print("tab",t, "need update:\(lastBuildDate)")
+                        print("tab",t, "need update") //:\(lastBuildDate)")
                         self.updateRssData(t) // get and replace the new feed
                         self.lastUpdated[t] = lastBuildDate
                     }

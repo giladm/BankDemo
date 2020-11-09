@@ -10,7 +10,6 @@ import Foundation
 class RssData: NSObject, XMLParserDelegate {
 
     private var rssItems: [[Any]] = [[Any]]()    // 2 dimension: (feed ,[rss-items])
-    static var color: Int = 0
     
     override init() {
         super.init()
@@ -27,12 +26,12 @@ class RssData: NSObject, XMLParserDelegate {
         DispatchQueue.global(qos: .userInitiated).async {
             for urlFeed in 0..<feedURLs.count {
                 let sUrl:String = Constants.tabs[t].feedList.feeds[urlFeed].rUrl
-                print ("in load rss feed for:\(sUrl)")
+                //print ("in load rss feed for:\(sUrl)")
                 if let url = URL(string: sUrl) {
-                    let x = self.loadRss(forFeedId: urlFeed, feedUrl: url)
-                    RssData.color += 1
+                    let color = Int.random(in: 0..<5)
+                    let x = self.loadRss(forFeedId: urlFeed, feedUrl: url, color: color)
                     rssItemArray.append(contentsOf: x)
-                    print("tab",t," count:\(rssItemArray.count)") //no. element
+                    //print("tab",t," count:\(rssItemArray.count)") //no. element
                     self.rssItems[t] = rssItemArray
                 }
             }
@@ -68,7 +67,7 @@ class RssData: NSObject, XMLParserDelegate {
         return returnValue
     }
     
-    func loadRss(forFeedId: Int, feedUrl: URL) -> [RssItem]{
+    func loadRss(forFeedId: Int, feedUrl: URL, color: Int) -> [RssItem]{
         var rssFeed : [AnyObject] = []
         var rssItemArray: [RssItem] = []
         let myParser : XmlParserManager = XmlParserManager().initWithURL(feedUrl) as! XmlParserManager
@@ -88,7 +87,7 @@ class RssData: NSObject, XMLParserDelegate {
             var desc = String(describing: x["description"])
             desc = desc.replacingOccurrences(of: "<img.*$", with: "", options: .regularExpression)
             desc = desc.replacingOccurrences(of: "Optional\\(", with: "", options: .regularExpression)
-            let rssItem:RssItem = RssItem.init(title: title , link: "link-not-used", description: desc, pubDate: pubDate, id: forFeedId*100+i, color: RssData.color)
+            let rssItem:RssItem = RssItem.init(title: title , link: "link-not-used", description: desc, pubDate: pubDate, id: forFeedId*100+i, color: color)
             rssItemArray.append(rssItem)
         }
         return rssItemArray

@@ -29,7 +29,7 @@ struct SecondPageView: View {
         }
         .onChange(of: defaultTab) { value in
             rssViewModel.updateSelectedTab(value)
-            print("Selection changed to \(rssViewModel.selectedTab)")
+//            print("Selection changed to \(rssViewModel.selectedTab)")
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: btnBack)

@@ -11,7 +11,7 @@ struct RssView: View {
 //    @Binding var selectedTab:Int
     var selectedTab:Int
     
-    let colorArray = [Color.red.opacity(0.2),Color.green.opacity(0.2),Color.blue.opacity(0.2)]
+    let colorArray = [Color.red.opacity(0.2),Color.green.opacity(0.2),Color.blue.opacity(0.2),Color.yellow.opacity(0.2),Color.orange.opacity(0.2)]
     let columns = [
         GridItem(.flexible())
     ]
