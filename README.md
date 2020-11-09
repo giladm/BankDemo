@@ -16,3 +16,11 @@
 - The empty label on the page is updated based on the feed selected from the second page and is clickable
   - Clicking on this label shows the last opened feed from the second page  
 - The application checks each RSS source every 5 seconds for an update. The application updates the feed immediately once the feed was updated.
+
+
+### Testing
+- App was developed in SwiftUI environment,  compiled with Xcode version 12.1 and tested on Simulator running iOS 14.1
+- To test the app
+  - Clone the repository
+  - Open project in Xcode
+  - Comile and run
