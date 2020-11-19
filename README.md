@@ -1,4 +1,4 @@
-# Bank Demo  
+# SwiftUI  Demo  
   
 ### Description  
 - Project includes 2 pages for the user.  
